@@ -20,7 +20,7 @@ public class Review implements Serializable{
 	private int reviewRating;
 	@Column
 	private String reviewComment;
-	@JsonManagedReference
+	
 	@ManyToOne(fetch = FetchType.LAZY)
 	private Course course;
 	 
